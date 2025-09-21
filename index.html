@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recharge with Rachael — Mobile Massage</title>
+  <meta name="description" content="Recharge with Rachael — Professional mobile massage in Sunderland, Gateshead, and Newcastle. Book facial, Swedish, and head massage treatments delivered to your door." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent1:#FDE68A;
+      --accent2:#7EE3B3;
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial; background: linear-gradient(180deg,#07111a 0%, #051021 60%); color:#e6eef6;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .container{max-width:1100px;margin:40px auto;padding:28px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);backdrop-filter:blur(6px);border-radius:12px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand h1{margin:0;font-size:18px;line-height:1;color:var(--accent1)}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+    nav{display:flex;gap:10px;align-items:center}
+    .nav-link{padding:8px 12px;border-radius:10px;font-weight:600;background:transparent;color:var(--muted);text-decoration:none}
+    .cta{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#05121a;font-weight:700;text-decoration:none;box-shadow:0 6px 24px rgba(14,23,30,0.5)}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:stretch;margin-top:22px}
+    .hero-card{padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .eyebrow{font-weight:700;color:var(--accent2);letter-spacing:0.6px}
+    h2{font-family:'Playfair Display',serif;margin:8px 0 6px;font-size:34px}
+    .lead{color:var(--muted);line-height:1.6}
+    .kpis{display:flex;gap:12px;margin-top:16px}
+    .kpi{background:var(--glass);padding:12px;border-radius:12px;flex:1;text-align:center}
+    .kpi strong{display:block;font-size:20px;color:var(--accent1)}
+    .actions{display:flex;gap:12px;margin-top:18px}
+    .booking{padding:22px;border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center}
+    .book-btn{display:block;padding:12px 20px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#07111a;text-align:center;text-decoration:none;font-weight:800}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:26px}
+    .service{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:16px;border-radius:14px;min-height:120px}
+    .service h4{margin:6px 0 6px}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+    .pricing{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:18px;border-radius:14px;min-width:220px;flex:1;border:1px solid rgba(255,255,255,0.03)}
+    .card .title{font-weight:700}
+    .card .minutes{color:var(--muted);font-size:13px}
+    .card .amount{font-size:22px;font-weight:800;color:var(--accent1)}
+    footer{margin-top:36px;padding:18px;border-radius:12px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.01));display:flex;justify-content:space-between;align-items:center}
+    .small{color:var(--muted);font-size:13px}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}}
+    .service:hover,.card:hover{transform:translateY(-6px);transition:all .25s ease}
+    .cta:active,.book-btn:active{transform:translateY(1px)}
+    .hero-bg{position:fixed;right:-120px;top:40vh;width:540px;height:540px;filter:blur(60px);opacity:0.6;z-index:0;background:radial-gradient(circle at 30% 20%, rgba(126,227,179,0.12), transparent 20%), radial-gradient(circle at 70% 80%, rgba(253,230,138,0.08), transparent 20%)}
+  </style>
+</head>
+<body>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div>
+          <h1>Recharge with Rachael</h1>
+          <p>Professional mobile massage — Sunderland, Gateshead & Newcastle</p>
+        </div>
+      </div>
+      <nav aria-label="Primary Navigation">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="pr.html">Pricing</a>
+        <a class="nav-link" href="pam.html">Kids Parties</a>
+        <a class="cta" href="https://wa.me/447539551535?text=Hi%20Recharge%20with%20Rachael%2C%20I%20want%20to%20book%20a%20massage">WhatsApp Book</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <div class="eyebrow">Mobile — We Come To You</div>
+          <h2>Relax. Rejuvenate. Restore.</h2>
+          <p class="lead">Trusted mobile massage in Sunderland, Gateshead & Newcastle — expert treatments and the convenience of having wellness come to your door.</p>
+          <div class="kpis" role="list">
+            <div class="kpi" role="listitem"><strong>Qualified Masseuse</strong><span class="small">For over two years</span></div>
+            <div class="kpi" role="listitem"><strong>Local Service</strong><span class="small">Sunderland, Gateshead, Newcastle</span></div>
+          </div>
+          <div class="actions">
+          <a class="nav-link" href="#services">Explore Services</a>
+          </div>
+
+          <div id="services">
+            <h3 style="margin-top:20px">Our Treatments</h3>
+            <div class="services" role="list">
+              <article class="service" role="listitem">
+                <h4>Facial</h4>
+                <p>A soothing facial treatment to refresh and rejuvenate your skin.</p>
+              </article>
+              <article class="service" role="listitem">
+                <h4>Swedish Massage</h4>
+                <p>Classic massage combining long strokes, kneading, and gentle stretching.</p>
+              </article>
+              <article class="service" role="listitem">
+                <h4>Back, Neck & Shoulder Massage</h4>
+                <p>Focused therapy to ease tension and stress in the upper body.</p>
+              </article>
+              <article class="service" role="listitem">
+                <h4>Back and Back of Legs</h4>
+                <p>Relieves tightness and improves circulation in key areas of the body.</p>
+              </article>
+              <article class="service" role="listitem">
+                <h4>Head & Face Massage</h4>
+                <p>Gentle stimulation for relaxation and improved sleep quality.</p>
+              </article>
+              <article class="service" role="listitem">
+                <h4>Indian Head Massage</h4>
+                <p>Traditional massage to relieve stress, tension, and restore balance.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <aside class="booking">
+          <a class="book-btn" href="https://wa.me/447539551535?text=Hi%20Recharge%20with%20Rachael%2C%20I'd%20like%20to%20book%20a%20massage">Book via WhatsApp</a>
+        </aside>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>
+        <div style="font-weight:700">Recharge with Rachael</div>
+        <div class="small">Sunderland • Gateshead • Newcastle • +44 7539 551535</div>
+      </div>
+      <div class="small">© <script>document.write(new Date().getFullYear())</script> Recharge with Rachael — All rights reserved</div>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
